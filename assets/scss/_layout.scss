@@ -1,0 +1,283 @@
+/*--------------------------------------------------------------
+# about
+--------------------------------------------------------------*/
+
+.sec-t{
+
+  h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 1199px) {
+     margin-bottom: 30px;
+     font-size: 40px;
+    }
+
+    @media only screen and (max-width: 767px) {
+     font-size: 35px;
+     margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 482px) {
+     font-size: 33px;
+     margin-bottom: 30px;
+
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $primary-color;
+
+    }
+  }
+  p{
+    font-size: 16px;
+    @media only screen and (max-width: 767px) {
+     font-size: 15px;
+    }
+  }
+}
+
+
+
+.about{
+  background-color: #CEE3F8;
+  position: relative;
+  padding: 40px 0px 70px 0px;
+  @media only screen and (max-width: 991px) {
+    padding: 30px 0px 60px 0px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 30px 0px 50px 0px;
+  }
+
+
+  .form-con{
+    background-color: $main-color;
+    padding: 23px 30px 30px 30px;
+    border-radius: 16px;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    @media only screen and (max-width: 767px) {
+     padding: 20px 25px 25px 25px;
+    }
+    .f-t{
+      img{
+        height: 70px;
+        @media only screen and (max-width: 767px) {
+         height: 60px;
+        }
+      }
+      margin-bottom: 16px;
+    }
+
+
+  }
+  .frm-grp{
+    &:not(:last-child) {
+    margin-bottom: 17px;
+    }
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .form-control{
+    padding: 11px 16px;
+    border-radius: 10px;
+  }
+  .btn-submit{
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: $primary-color;
+    padding: 11px 16px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all .2s ease-in;
+    &:hover{
+      background-color: darken($color: $primary-color, $amount: 10%);
+      color: #fff;
+    }
+  }
+
+  .list-p{
+    padding: 0;
+    margin: 0;
+
+    li{
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+      margin-bottom: 16px;
+      @media only screen and (max-width: 767px) {
+       margin-bottom: 15px;
+      }
+      }
+    }
+    i{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      min-width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      // background-color: $main-color;
+       background-color: $main-color;
+       box-shadow: 0 0.1625rem 0.25rem 0 rgb(36 39 46 / 15%);
+      color: $text-color;
+      font-size: 17px;
+      margin-right: 10px;
+      @media only screen and (max-width: 767px) {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        font-size: 17px;
+        margin-right: 8px;
+      }
+    }
+    span{
+      color: $title-color;
+      font-weight: 500;
+      font-size: 16px;
+      @media only screen and (max-width: 767px) {
+       font-size: 14px;
+      }
+    }
+    a{
+      text-decoration: underline;
+      display: inline-block;
+      color: $primary-color;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+# goals
+--------------------------------------------------------------*/
+.goals{
+  background-color: #CEE3F8;
+  padding: 70px 0px;
+  @media only screen and (max-width: 767px) {
+   padding: 50px 0px;
+  }
+  .sec-t{
+    h2{
+      &::before{
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      margin-bottom: 55px;
+      @media only screen and (max-width: 1199px) {
+       margin-bottom: 35px;
+       font-size: 40px;
+      }
+
+      @media only screen and (max-width: 767px) {
+       font-size: 35px;
+       margin-bottom: 30px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 33px;
+       margin-bottom: 30px;
+
+      }
+    }
+  }
+  .g-single{
+    background-color: #eee;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    padding: 34px 30px 40px 30px;
+    text-align: center;
+    border-radius: 16px;
+    transition: all .2s ease-in;
+    &.even{
+      background: $bg-gr ;
+      p{
+        color: #fff;
+      }
+    }
+    .g-icon{
+      height: 55px;
+      margin-bottom: 17px;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    &:hover{
+      background: $bg-gr ;
+      p{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.collect{
+  background-color: $main-color;
+  padding: 70px 0px;
+  @media only screen and (max-width: 767px) {
+   padding: 50px 0px;
+  }
+  i{
+    background-color: #CEE3F8 !important;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# contact
+--------------------------------------------------------------*/
+.contact{
+  background: $bg-gr;
+  padding: 70px 0px;
+  @media only screen and (max-width: 767px) {
+   padding: 50px 0px;
+  }
+  .sec-c{
+    // text-align: center;
+    h2{
+      font-size: 45px;
+      font-weight: 700;
+      color: $title-color;
+      margin-bottom: 20px;
+      display: inline-block;
+      @media only screen and (max-width: 1199px) {
+       font-size: 40px;
+       margin-bottom: 16px;
+      }
+      @media only screen and (max-width: 991px) {
+       font-size: 35px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 32px;
+       margin-bottom: 12px;
+      }
+    }
+  }
+  p{
+    font-size: 22px;
+    font-weight: 500;
+    color: $main-color;
+    @media only screen and (max-width: 767px) {
+     font-size: 18px;
+    }
+    a{
+      text-decoration: underline;
+      color: $secondary-color;
+    }
+  }
+}

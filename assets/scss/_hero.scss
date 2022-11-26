@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+
+.hero-area {
+	position: relative;
+
+	background-color: $main-color;
+	// background-color: #dfdddd;
+  background-color: #CEE3F8;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  @media only screen and (max-width: 991px) {
+   text-align: center;
+  }
+  @media only screen and (max-width: 767px) {
+   padding-top: 60px;
+   padding-bottom: 40px;
+  }
+
+	.hero-inner {
+    position: relative;
+
+	}
+	.hero-logo {
+    max-width: 100%;
+    height: auto;
+	}
+	h1 {
+    font-family: 'Rubik Distressed', cursive;
+		font-size: 70px;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+		font-weight: 400;
+		color: $primary-color;
+
+		@media only screen and (max-width: 1299px) {
+			font-size: 55px;
+			margin-bottom: 17px;
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: 55px;
+      margin-bottom: 12px;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 45px;
+			margin-bottom: 10px;
+		}
+		@media only screen and (max-width: 482px) {
+			font-size: 40px;
+      margin-bottom: 6px;
+		}
+
+
+	}
+	p {
+		font-size: 23px;
+		color: $title-color;
+		font-weight:500;
+    line-height: 1.5;
+    @media only screen and (max-width: 1199px) {
+     font-size: 21px;
+    }
+    @media only screen and (max-width: 991px) {
+     font-size: 20px;
+    }
+
+
+	}
+}
