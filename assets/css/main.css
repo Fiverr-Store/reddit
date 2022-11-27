@@ -891,6 +891,89 @@ h6 a {
 }
 
 /*--------------------------------------------------------------
+# success-sec
+--------------------------------------------------------------*/
+.success-sec {
+  padding: 50px 0px;
+}
+@media only screen and (max-width: 767px) {
+  .success-sec {
+    padding: 30px 0px;
+  }
+}
+
+.suc-box {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #CEE3F8;
+  padding: 30px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  border: 1px solid #bbdbfb;
+}
+@media only screen and (max-width: 767px) {
+  .suc-box {
+    padding: 20px 20px;
+  }
+}
+.suc-box h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .suc-box h1 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .suc-box h1 {
+    font-size: 24px;
+  }
+}
+.suc-box ul {
+  margin: 0;
+  padding: 0;
+}
+.suc-box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.suc-box ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.suc-box ul i {
+  color: #36ba05;
+  position: relative;
+  top: 4px;
+  font-size: 19px;
+  margin-right: 5px;
+}
+.suc-box ul p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.suc-box ul a {
+  text-decoration: underline;
+  font-style: italic;
+  color: #FF4500;
+}
+.suc-box h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 16px;
+  color: #FF4500;
+}
+@media only screen and (max-width: 767px) {
+  .suc-box h3 {
+    font-size: 22px;
+  }
+}
+
+/*--------------------------------------------------------------
 # road-map
 --------------------------------------------------------------*/
 @-webkit-keyframes glowing2 {
