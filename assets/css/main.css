@@ -626,14 +626,34 @@ h6 a {
   }
 }
 .about .form-con .f-t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 16px;
 }
 .about .form-con .f-t img {
-  height: 70px;
+  width: 65px;
+  min-width: 65px;
+  height: 65px;
+  margin-right: 5px;
 }
 @media only screen and (max-width: 767px) {
   .about .form-con .f-t img {
-    height: 60px;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+  }
+}
+.about .form-con .f-t h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .about .form-con .f-t h5 {
+    font-size: 18px;
   }
 }
 .about .frm-grp {

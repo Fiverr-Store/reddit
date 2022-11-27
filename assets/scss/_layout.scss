@@ -67,10 +67,24 @@
      padding: 20px 25px 25px 25px;
     }
     .f-t{
+      display: flex;
+      align-items: center;
       img{
-        height: 70px;
+        width: 65px;
+        min-width: 65px;
+        height: 65px;
+        margin-right: 5px;
         @media only screen and (max-width: 767px) {
-         height: 60px;
+         width: 56px;
+         height: 56px;
+         min-width: 56px;
+        }
+      }
+      h5{
+        font-size: 20px;
+        font-weight: 600;
+        @media only screen and (max-width: 767px) {
+         font-size: 18px;
         }
       }
       margin-bottom: 16px;
