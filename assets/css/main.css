@@ -242,6 +242,11 @@ h6 a {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+@media only screen and (max-width: 991px) {
+  .navbar .navbar-brand {
+    color: #fff;
+  }
+}
 .navbar .navbar-brand img {
   height: 40px;
   margin-right: 4px;
@@ -510,7 +515,6 @@ h6 a {
 --------------------------------------------------------------*/
 .hero-area {
   position: relative;
-  background-color: #F8F9FE;
   background-color: #CEE3F8;
   padding-top: 70px;
   padding-bottom: 60px;
