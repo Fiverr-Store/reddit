@@ -28,31 +28,37 @@
 		padding: 8px 0;
 	}
 
-	.navbar-brand {
+  .navbar-brand {
 
-		text-decoration: none;
-		font-size: 22px;
-		color: $primary-color;
-		font-weight: 600;
-		padding: 0;
-		img {
-			height: 70px;
-			transition: all 0.4s ease-in-out;
-			@media only screen and (max-width: 1299px) {
-				height: 55px;
-			}
-			@media only screen and (max-width: 991px) {
-				height: 40px;
-			}
-			@media only screen and (max-width: 767px) {
-				height: 30px;
-			}
-		}
-		text-decoration: none;
-    @media only screen and (max-width: 767px) {
-     font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    padding: 0;
+    transition: all .2s ease-in;
+    img {
+      height: 40px;
+      margin-right: 4px;
+      transition: all 0.4s ease-in-out;
+      @media only screen and (max-width: 1299px) {
+        height: 40px;
+      }
+      @media only screen and (max-width: 991px) {
+        height: 40px;
+      }
+      @media only screen and (max-width: 767px) {
+        height: 35px;
+      }
     }
-	}
+    @media only screen and (max-width: 767px) {
+     font-size: 20px;
+    }
+    @media only screen and (max-width: 482px) {
+     font-size: 16px;
+    }
+  }
 
 	.navbar-nav {
 		.nav-item {
@@ -169,7 +175,7 @@
 	left: 0;
 	z-index: 99;
 	transition: all 0.3s ease-out 0s;
-	background-color: #000;
+	background-color: $secondary-color;
 	box-shadow: 0 0.16rem 0.2rem 0 rgba(36, 39, 46, 0.05);
 	.navbar {
 		padding: 8px 0;
@@ -186,23 +192,35 @@
 			}
 		}
 		.navbar-brand {
-			padding: 0;
-			color: $primary-color;
-			img {
-				height: 55px;
-				transition: all 0.4s ease-in-out;
-				@media only screen and (max-width: 1299px) {
-					height: 55px;
-				}
-				@media only screen and (max-width: 991px) {
-					height: 45px;
-				}
-				@media only screen and (max-width: 767px) {
-					height: 45px;
-				}
-			}
-			text-decoration: none;
-		}
+
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 600;
+      padding: 0;
+      img {
+        height: 40px;
+        margin-right: 4px;
+        transition: all 0.4s ease-in-out;
+        @media only screen and (max-width: 1299px) {
+          height: 40px;
+        }
+        @media only screen and (max-width: 991px) {
+          height: 40px;
+        }
+        @media only screen and (max-width: 767px) {
+          height: 35px;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 20px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 16px;
+      }
+    }
 
 		.navbar-toggler .toggler-icon {
 			background-color: #fff;

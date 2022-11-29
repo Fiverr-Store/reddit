@@ -3,7 +3,7 @@
 # footer
 --------------------------------------------------------------*/
 footer {
-	background-color: #000;
+	background-color: $secondary-color;
   @media only screen and (max-width: 482px) {
    position: relative;
   }

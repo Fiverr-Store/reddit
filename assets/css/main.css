@@ -166,7 +166,7 @@ h6 a {
   position: absolute;
   inset: 0px;
   margin: auto;
-  background-color: #0B474B;
+  background-color: #041026;
   -webkit-animation: crlMugLoader 2s linear infinite alternate;
           animation: crlMugLoader 2s linear infinite alternate;
 }
@@ -229,20 +229,28 @@ h6 a {
 }
 .navbar .navbar-brand {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 22px;
-  color: #FF4500;
+  color: #000;
   font-weight: 600;
   padding: 0;
-  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .navbar .navbar-brand img {
-  height: 70px;
+  height: 40px;
+  margin-right: 4px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media only screen and (max-width: 1299px) {
   .navbar .navbar-brand img {
-    height: 55px;
+    height: 40px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -252,12 +260,17 @@ h6 a {
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-brand img {
-    height: 30px;
+    height: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-brand {
-    font-size: 18px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .navbar .navbar-brand {
+    font-size: 16px;
   }
 }
 .navbar .navbar-nav .nav-item {
@@ -371,7 +384,7 @@ h6 a {
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background-color: #000;
+  background-color: #041026;
   -webkit-box-shadow: 0 0.16rem 0.2rem 0 rgba(36, 39, 46, 0.05);
           box-shadow: 0 0.16rem 0.2rem 0 rgba(36, 39, 46, 0.05);
 }
@@ -392,28 +405,47 @@ h6 a {
   color: #fff;
 }
 .sticky .navbar .navbar-brand {
-  padding: 0;
-  color: #FF4500;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0;
 }
 .sticky .navbar .navbar-brand img {
-  height: 55px;
+  height: 40px;
+  margin-right: 4px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media only screen and (max-width: 1299px) {
   .sticky .navbar .navbar-brand img {
-    height: 55px;
+    height: 40px;
   }
 }
 @media only screen and (max-width: 991px) {
   .sticky .navbar .navbar-brand img {
-    height: 45px;
+    height: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
   .sticky .navbar .navbar-brand img {
-    height: 45px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sticky .navbar .navbar-brand {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .sticky .navbar .navbar-brand {
+    font-size: 16px;
   }
 }
 .sticky .navbar .navbar-toggler .toggler-icon {
@@ -634,16 +666,16 @@ h6 a {
   margin-bottom: 16px;
 }
 .about .form-con .f-t img {
-  width: 65px;
-  min-width: 65px;
-  height: 65px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
   margin-right: 5px;
 }
 @media only screen and (max-width: 767px) {
   .about .form-con .f-t img {
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
   }
 }
 .about .form-con .f-t h5 {
@@ -886,7 +918,7 @@ h6 a {
 }
 .contact p a {
   text-decoration: underline;
-  color: #0B474B;
+  color: #041026;
 }
 
 /*--------------------------------------------------------------
@@ -1069,7 +1101,7 @@ h6 a {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  color: #0B474B;
+  color: #041026;
   font-weight: 600;
 }
 .roadmap-section .sec-t3 p:not(:last-child) {
@@ -1276,7 +1308,7 @@ h6 a {
 # footer
 --------------------------------------------------------------*/
 footer {
-  background-color: #000;
+  background-color: #041026;
   padding: 30px 0px;
   text-align: center;
 }
